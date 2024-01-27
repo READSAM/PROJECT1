@@ -14,6 +14,9 @@
     color:white;
      position:static;
     top:0px;   
+ background-image: url("/festive.jpg");
+    opacity:70% ;
+    background-size: cover;
 }
 #dropdown
 {
@@ -60,9 +63,7 @@ h1{
     height:200px;
     width:100%;
     position:absolute;  right:0px;
-    background-image: url("/festive.jpg");
-    opacity:70% ;
-    background-size: cover;
+   
 }
 
 /* navbar */
