@@ -61,7 +61,7 @@ h1{
     height:200px;
     width:100%;
     position:absolute;  right:0px;
-    background-image: url(".\fest.jpg");
+    background-image: url("../images/fest.jpg");
     opacity:70% ;
     background-size: cover;
 }
