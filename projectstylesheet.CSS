@@ -91,7 +91,7 @@ h2{
 }
 .illustration{
     width:100%;
-    background-image: url("/illustrate1.jpg");
+    background-image: url("./illustrate1.jpg");
     background-size:cover;
     border:2px solid maroon;
 }
