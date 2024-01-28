@@ -14,6 +14,9 @@
     color:white;
      position:static;
     top:0px;  
+    background-image: url("festive.jpg");
+    opacity:70% ;
+    background-size: cover;
 }
 #dropdown
 {
@@ -23,11 +26,11 @@
     position:fixed; 
     top:0px;
     left:50px; 
-    z-index:1;   
+    z-index:100;   
 }
 
 #items{
-    height:60px;
+    height:auto;
     display:none;
     position:absolute;
     margin-left:60px;
@@ -55,16 +58,6 @@ h1{
     z-index:2;
     color:rgb(80,2,2);
 }
-#festive
-{
-    height:200px;
-    width:100%;
-    position:absolute;  right:0px;
-    background-image: url("festive.jpg");
-    opacity:70% ;
-    background-size: cover;
-}
-
 /* navbar */
 /* content */
 #content{
@@ -151,37 +144,37 @@ margin:20px;
 /* footer */
 /* form */
 form{
-    height:650px;
-    width:650px;
+    height:max-content;
+    width:50%;
     background-color: rgb(115, 144, 114);
     padding:25px;
     color:maroon;
-    font-size:60px;
+    font-size:4em ;
     font-family:'Times New Roman', Times, serif;
     position:fixed;
-    left:22.5%;
+     left:25%;
     border:2px white solid;
+    display:flex;
+       flex-direction:column;
 }
 #submit{
-    position:relative;
-    left:200px;
-    height:60px;
-    border:1px white solid;
+    height:auto;
+    width:fit-content;
+    border:1px #ffffff solid;
     border-radius:20%;
-     font-size:50px;
+     font-size:1em;
      color:maroon;
   background-color: rgb(79, 111, 82);
 }
 .text{
-    height:50px;
     font-size:50px;
+    width:fit-content;
 } 
 body.b{
     background-color: rgb(79, 111, 82);
 }
 /* form */
 /* responsive */
-/* tablets */
 @media(max-width:800px)  
 {
    #bar{
@@ -193,11 +186,17 @@ body.b{
         left:-90px;
         text-wrap:nowrap;
    }
-   #festive{
+   /* #festive{
      width:100%;
+   } */
+   #dropdown #items{
+    flex-direction:column;
+   }
+   #items a{
+    margin:5px;
    }
 }
-@media(max-width:650px)  
+@media(max-width:690px)  
 {
    #footer{
     flex-direction:column;  
@@ -213,8 +212,11 @@ body.b{
     width: 60%;
     align-self:center;
    } 
+   .text{
+    font-size:30px;
+   }
 }
-@media(max-width:400px)
+@media(max-width:420px)
 {
     #bar h1{
         text-wrap:balance;
@@ -227,5 +229,24 @@ body.b{
         width:100%;
         padding:0px;
     }
+    .text{
+        font-size:20px;
+    }
 }
-/* responsive */
+@media(max-width:1200px)
+{
+    form{
+        left:0px;
+       width:100%;
+       height:100%;
+       font-size:2em;
+       border:none;
+       background-color:transparent;
+    }
+    #submit
+    {
+        font-size:2em;
+        background-color: rgb(115, 144, 114);
+    }
+}
+/*responsive*/
