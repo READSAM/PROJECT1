@@ -215,7 +215,7 @@ body.b{
     font-size:30px;
    }
 }
-@media(max-width:420px)
+@media(max-width:470px)
 {
     #bar h1{
         text-wrap:balance;
